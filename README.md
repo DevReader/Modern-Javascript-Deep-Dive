@@ -40,7 +40,7 @@
 
 <br/>
 
-## 정리 현황
+## 스터디 커리큘럼
 
 <table>
   <thead>
@@ -50,6 +50,38 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>1주차</td>
+      <td>4장 - 9장</td>
+    </tr>
+    <tr>
+      <td>2주차</td>
+      <td>10장 - 15장</td>
+    </tr>
+    <tr>
+      <td>3주차</td>
+      <td>16장 - 21장</td>
+    </tr>
+    <tr>
+      <td>4주차</td>
+      <td>22장 - 23장</td>
+    </tr>
+    <tr>
+      <td>5주차</td>
+      <td>24장 - 25장</td>
+    </tr>
+    <tr>
+      <td>6주차</td>
+      <td>26장 - 27장</td>
+    </tr>
+    <tr>
+      <td>7주차</td>
+      <td>33장 - 37장</td>
+    </tr>
+    <tr>
+      <td>8주차</td>
+      <td>42장 - 49장</td>
+    </tr>
   </tbody>
 </table>
 

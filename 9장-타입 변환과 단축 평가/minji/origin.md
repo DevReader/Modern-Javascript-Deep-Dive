@@ -13,6 +13,7 @@
     ```jsx
     1 + "2"; // -> "12"
     ```
+
 - ES6 템플릿 리터럴의 표현식 삽입은 표현식의 평가 결과를 문자열 타입으로 암묵적 타입 변환함
   ```jsx
   `1 + 1 = ${1 + 1}`; // "1 + 1 = 2"
@@ -89,6 +90,7 @@
 - 단축 평가: 논리 연산의 결과를 결정하는 피연산자를 타입 변환하지 않고 그대로 반환하는 것
 - 단축 평가는 표현식을 평가하는 도중에 평가 결과가 확정된 경우 나머지 평가 과정을 생략함
 - If 문을 대체 하는 방법
+
   ```jsx
   var done = true;
   ver message = '';
@@ -98,6 +100,7 @@
   //if (!done) message = '미완료';
   message = done || '미완료'
   ```
+
   1. 객체를 가리키기를 기대하는 변수가 null 또는 undefined가 아닌지 확인하고 프로퍼티를 참조할 때
 
      ```jsx
@@ -108,6 +111,7 @@
      객체를 기대하는 변수 값이 null 또는 undefined인 경우 객체의 프로퍼티를 참조하면 타입에러가 발생.
 
   2. 함수 매개변수에 기본값을 설정할 때
+
   ```jsx
   // 단축 평가를 사용한 매개변수의 기본값 설정
   function getStringLength(str) {
@@ -127,19 +131,23 @@
   getStringLength(); // -> 0
   getStringlength("hi"); // -> 2
   ```
+
   함수를 호출할 때 인수를 전달하지 않으면 매개변수에는 undefined가 할당 → 단축 평가를 사용해 매개변수의 기본값을 설정하면 undefined로 인해 발생할 수 있는 에러를 방지할 수 있음
 
 ### 옵셔널 체이닝 연산자
 
 - ES11(ECMAScript2020)에서 도입된 옵셔널 체이닝 연산자 `?.`는 좌항의 피연산자가 null 또는 undefined인 경우 undefined를 반환하고, 그렇지 않으면 우항의 프로퍼티 참조를 이어감
   이는 객체를 가리키기를 기대하는 변수가 null 또는 undefined가 아닌지 확인하고 프로퍼티를 참조할 때 유용
+
   ```jsx
   var elem = null;
 
   var value = elem?.value;
   console.log(value); // undefined
   ```
+
 - 옵셔널 체이닝 연산자는 좌항 피연산자가 false로 평가되는 Falsy 값(false, undefined, null, 0, -0, NaN, ‘’)이라도 null 또는 undefined가 아니면 우항의 프로퍼티 참조를 이어감
+
   ```jsx
   .var str = '';
 
